@@ -5,6 +5,7 @@ const HomePage = () => {
   return (
     <main className='container'>
       <Hero />
+      
     </main>
   );
 };

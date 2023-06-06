@@ -1,17 +1,12 @@
 .hero {
   padding: 60px 0;
 
-  .main-section {
-    overflow: hidden;
-    border-radius: 5px;      
-  }
-
   .secondary-section {
     overflow: hidden;
-    border-radius: 5px;    
+    border-radius: 5px;
   }
   .image {
-      display: block;
-      object-fit: cover;
-    }
+    display: block;
+    object-fit: cover;
+  }
 }

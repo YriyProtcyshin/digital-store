@@ -1,13 +1,11 @@
 import Grid from '@mui/material/Grid';
-
 import { useState, useEffect } from 'react';
-
 import './hero.scss';
-import photo_1 from '../../images/main-banner.webp';
 import photo_2 from '../../images/photo-2.webp';
 import photo_3 from '../../images/photo-3.webp';
 import photo_4 from '../../images/photo-4.webp';
 import photo_5 from '../../images/photo-5.webp';
+import Slider from 'components/slider/Slider';
 
 const Hero = () => {
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
@@ -30,8 +28,7 @@ const Hero = () => {
     };
   }, [screenSize]);
 
-  const bigImage = (window.innerWidth - 10) / 2;
-  const bigHeight = bigImage / 1.72;
+  
 
   const smallImage = window.innerWidth / 4;
   const smallHeight = smallImage / 1.8;
@@ -40,15 +37,7 @@ const Hero = () => {
     <div className="hero">
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <div className="main-section">
-            <img
-              src={photo_1}
-              alt=""
-              className="image"
-              width={bigImage}
-              height={bigHeight}
-            />
-          </div>
+         <Slider/>
         </Grid>
         <Grid item container xs={6} spacing={2}>
           <Grid item xs={6}>
