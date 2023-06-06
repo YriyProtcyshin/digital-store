@@ -1,11 +1,11 @@
 .header {
-  background-color: var(--color-131921);
+  background-color: var(--background-color-main);
   width: 100%;
   color: white;
 
   hr {
     border: none;
-    border-bottom: 1px solid var(--color-3b4149);
+    border-bottom: 1px solid var(--background-color-second);
   }
 
   .header-top {
@@ -32,7 +32,7 @@
     a {
       color: white;
       padding: 0 10px;
-      border-right: 1px solid var(--color-3b4149);
+      border-right: 1px solid var(--background-color-second);
     }
     .dropdown {
       color: white;
@@ -157,7 +157,7 @@
   }
 
   .header-bottom {
-    background-color: #232f3e;
+    background-color: var(--background-color-second);
     padding: 15px 0;
 
     .container {

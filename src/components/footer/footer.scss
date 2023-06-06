@@ -1,0 +1,166 @@
+.footer {
+  background-color: var(--background-color-second);
+  color: white;
+
+  .footer-top {
+    display: flex;
+    justify-content: center;
+    padding: 42px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+    }
+
+    .newsletter {
+      display: flex;
+      align-items: flex-start;
+
+      gap: 10px;
+
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 42px;
+      letter-spacing: 0.6px;
+
+      .logo {
+        font-size: 38px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .form {
+      width: 500px;
+      display: flex;
+      gap: 10px;
+      background-color: white;
+      border-radius: 5px;
+
+      .input-form {
+        border-radius: 5px;
+        background-color: white;
+        outline: none;
+        border: none;
+        width: 100%;
+
+        .MuiInputBase-input {
+          border-radius: 5px;
+          background-color: white;
+          padding-top: 19px;
+        }
+        .MuiInputLabel-shrink {
+          color: grey;
+        }
+
+        .MuiFilledInput-underline::before,
+        .MuiFilledInput-underline::after {
+          border: none;
+        }
+      }
+      .button {
+        width: 150px;
+        margin: 5px;
+
+        background-color: var(--background-color-main);
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer-middle {
+    padding: 65px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      .block {
+        width: 16%;
+
+        &.lx {
+          width: 27%;
+        }
+
+        h2 {
+          margin-top: 0;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.6px;
+          line-height: 25px;
+          text-transform: capitalize;
+          margin-bottom: 0;
+          color: white;
+          padding-bottom: 20px;
+        }
+        .list {
+          li {
+            margin-top: 20px;
+            list-style: none;
+          }
+
+          .link {
+            color: white;
+          }
+        }
+
+        .app-section {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          gap: 10px;
+
+          
+
+          .app {
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            width: 210px;
+            padding: 10px 10px;
+            background-color: white;
+            cursor: pointer;
+
+            .icon {
+              font-size: 40px;
+              margin-right: 10px;
+              color: var(--background-color-main);
+            }
+
+            .desc {
+              .header {
+                background-color: white;
+                color: var(--background-color-main);
+                font-size: 12px;
+              }
+              .title {
+                color: var(--background-color-main);
+                font-size: 24px;
+              }
+            }
+          }
+        }
+
+        .our-app-section{
+            margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom{
+    padding: 10px 0;
+
+    .copyright{
+        a {
+            color: white;
+        }
+    }
+  }
+}

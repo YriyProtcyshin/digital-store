@@ -75,9 +75,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-
       <hr />
-
       <div className="header-upper">
         <div className="container">
           <div className="logo">

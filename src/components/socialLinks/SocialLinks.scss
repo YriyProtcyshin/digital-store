@@ -1,0 +1,28 @@
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    
+    border-radius: 50%;
+    background-color: var(--background-color-line);
+    width: 45px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {        
+        .icon{
+        color: var(--bg-button);
+    }
+    }
+
+    
+  }
+ 
+}
