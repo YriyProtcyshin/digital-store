@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {  Pagination, Autoplay, EffectFade } from 'swiper';
+import { Pagination, Autoplay, EffectFade } from 'swiper';
 import { Link } from 'react-router-dom';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 // Import custom style
-import "./slider.scss"
-
+import './slider.scss';
 
 import photo_1 from '../../images/main-banner.webp';
 import photo_2 from '../../images/main-banner-2.webp';
@@ -35,16 +34,16 @@ const Slider = () => {
   }, [screenSize]);
 
   const bigImage = (window.innerWidth - 10) / 2;
-  const bigHeight = bigImage / 1.72;
+  const bigHeight = bigImage / 1.66;
 
   return (
     <Swiper
       pagination={{
         clickable: true,
       }}
-      autoplay={{
-        delay: 6000,
-      }}
+      // autoplay={{
+      //   delay: 6000,
+      // }}
       effect="fade"
       loop={true}
       modules={[Pagination, Autoplay, EffectFade]}

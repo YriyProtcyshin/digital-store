@@ -1,0 +1,58 @@
+.banners {
+  overflow: hidden;
+  border-radius: 10px;
+  max-height: 100%;
+  position: relative;
+  
+
+  .image {
+    display: block;
+    object-fit: cover;
+    
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+    .text {
+      font-size: 14px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #bf4800;
+      letter-spacing: 0.2px;
+      @media (max-width: 1269px) {
+        font-size: 11px;
+        line-height: 14px;
+      }
+    }
+    .title {
+      font-size: 26px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: var(--color-base-accent-1);
+      letter-spacing: 0;
+      line-height: 36px;
+      margin: 11px 0 12px;
+
+      @media (max-width: 1269px) {
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+    .price {
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      color: var(--color-base-accent-1);
+      width: 70%;
+
+      @media (max-width: 1369px) {
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}
