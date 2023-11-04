@@ -38,10 +38,17 @@ const Hero = () => {
   return (
     <div className="hero">
       <Grid container spacing={2}>
-        <Grid item xs={6}>
+        <Grid item md={6} sm={12}>
           <Slider />
         </Grid>
-        <Grid item container xs={6} spacing={2} className="banners-section">
+        <Grid
+          item
+          container
+          md={6}
+          sm={12}
+          spacing={2}
+          className="banners-section"
+        >
           <CategoryBanners
             images={images}
             width={smallImageWigth}

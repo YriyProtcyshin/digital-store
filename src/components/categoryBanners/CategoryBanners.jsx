@@ -5,7 +5,7 @@ const CategoryBanners = ({ images, width, height }) => {
   return (
     <>
       {images.map(image => (
-        <Grid item xs={6}>
+        <Grid item md={6} xs={6}>
           <div className="banners">
             <img
               src={image}
